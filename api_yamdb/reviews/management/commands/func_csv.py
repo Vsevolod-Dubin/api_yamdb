@@ -47,7 +47,7 @@ def review_create(row):
         text=row[2],
         author_id=row[3],
         score=row[4],
-        pub_date=row[5]
+        pub_date=row[5],
     )
 
 

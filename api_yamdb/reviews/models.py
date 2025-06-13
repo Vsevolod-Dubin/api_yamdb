@@ -1,12 +1,9 @@
-from datetime import datetime
-
 from django.contrib.auth import get_user_model
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 from .constants import NAME_MAX_LENGTH
 from .validators import validate_year
-
 
 User = get_user_model()
 
@@ -23,13 +20,13 @@ class GroupBaseModel(models.Model):
         verbose_name="Слаг",
         help_text="Уникальный фрагмент URL-адреса",
     )
-    
+
     class Meta:
         abstract = True
         ordering = ("name",)
-    
+
     def __str__(self) -> str:
-        return self.name 
+        return self.name
 
 
 class Category(GroupBaseModel):

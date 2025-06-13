@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *fdsf
 *review_log
+*hidden
 
 # C extensions
 *.so
